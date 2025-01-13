@@ -1,0 +1,29 @@
+
+.nav-horizontal {
+  display: flex;
+  justify-content: center; // Centra horizontalmente
+  align-items: center;
+  width: 100%; // Ocupa todo el ancho
+  padding: 0 1rem;
+  color: darkblue;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%; // Ocupa todo el ancho
+    justify-content: center; // Centra horizontalmente
+    li {
+      margin: 0 1rem;
+      a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

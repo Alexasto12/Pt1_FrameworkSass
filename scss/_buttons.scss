@@ -1,0 +1,54 @@
+@use 'variables' as *;
+.dark-button {
+  background-image: $primary-dark;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-image 0.3s;
+  &:hover {
+    background-image: $primary-light;
+    color: black;
+  }
+}
+.light-button {
+  background-image: $primary-light;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-image 0.3s;
+  &:hover {
+    background-image: $primary-dark;
+    color: white;
+  }
+}
+
+.dark-button2 {
+  background-image: $secondary-dark;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-image 0.3s;
+  &:hover {
+    background-image: $secondary-light;
+    color: black;
+  }
+}
+.light-button2 {
+  background-image: $secondary-light;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-image 0.3s;
+  &:hover {
+    background-image: $secondary-dark;
+    color: white;
+  }
+}

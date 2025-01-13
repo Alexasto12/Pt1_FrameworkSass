@@ -1,0 +1,37 @@
+.dark-mode{
+    background-color: #333;
+    color: #fff;
+}
+
+.light-mode{
+    background-color: #fff;
+    color: #333;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover{
+        color: red;
+    }
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        color: red;
+    }
+}
+
+.p-description{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    &:hover{
+        color: red;
+    }
+}

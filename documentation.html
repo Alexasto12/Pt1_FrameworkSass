@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="dark-mode" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redesign</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="./media/logo.png" type="image/x-icon">
+</head>
+<header>
+    <h1>Redesing</h1>
+    <p>CSS Framework based on SASS</p>
+    <p>Version 1.0.0</p>
+    <img class= "img-medium" src="./media/logo.png" alt="Logo">
+    <p>Breu descripció del framework. Especificar que és Desktop First, nombre de columnes de la graella, i altres característiques.</p>
+    <nav class="nav-horizontal">
+      <ul>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#grid-system">Graella</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#customization">Personalització</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+  <div class="div-buttons">
+    <button class="dark-button">Dark Button</button>
+    <button class="light-button">Light Button</button>
+    <button class="dark-button2">Dark Button</button>
+    <button class="light-button2">Light Button</button>
+  </div>
+    <div class="div-form">
+      <h2> HORIZONTAL FORMS</h2>
+      <p class="p-description">
+        The .form-horizontal class in the provided SCSS file is designed to style horizontal forms. It uses flexbox for layout, allowing form elements to wrap and align centrally. The form has padding, a maximum width of 75% of the viewport, and a transparent border that changes to white on hover with a smooth transition. Labels have left and right margins for spacing. Input, select, and textarea elements are styled with padding, borders, rounded corners, and responsive widths, changing border color on focus. The submit button, styled with the .submit-horizontal class, has padding, rounded corners, a red background that darkens on hover, and a white text color.
+      </p>
+      <form class="form-horizontal" action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="2" rows="2"></textarea>
+        <input class="sumbit-horizontal"type="submit" value="Submit">
+      </form>
+    </div>
+</body>
+</html>
