@@ -1,7 +1,21 @@
+// Color scheme
 $primary-light: linear-gradient(2deg, rgba(56, 224, 213, 0.904) 0%, rgba(175, 232, 236, 0.849) 60%);
 $primary-dark: linear-gradient(2deg, rgba(78, 2, 2, 0.681) 0%, rgba(232, 31, 31, 0.873) 60%); 
 
 $secondary-light: linear-gradient(2deg, rgba(20, 92, 87, 0.719) 0%, rgb(9, 229, 245) 60%);
 $secondary-dark: linear-gradient(2deg, rgb(78, 2, 2) 0%, rgba(232, 31, 31, 0.507) 60%);
+
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1400px;
+
+// Feature toggles
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-transitions: true;
 
 

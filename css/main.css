@@ -1,3 +1,9 @@
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .dark-mode {
   background-color: #333;
   color: #fff;
@@ -9,10 +15,11 @@
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 h1:hover {
   color: red;
@@ -23,12 +30,14 @@ h2 {
   margin-bottom: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 h2:hover {
   color: red;
 }
 
 .p-description {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2rem;
   margin-bottom: 20px;
   font-weight: 300;
@@ -193,7 +202,7 @@ h2:hover {
   align-items: center;
   width: 100%;
   padding: 0 1rem;
-  color: darkblue;
+  color: rgb(0, 248, 236);
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -226,12 +235,52 @@ h2:hover {
   color: #333;
 }
 
+.img-icon {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+.img-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.img-small {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+.img-small:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
 .img-medium {
   width: 100%;
   max-width: 150px;
   height: auto;
 }
 .img-medium:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.img-large {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.img-large:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.img-xlarge {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.img-xlarge:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
