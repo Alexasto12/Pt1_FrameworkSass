@@ -1,7 +1,41 @@
-* {
-  margin: 5px;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin-left: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: "";
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+* {
+  max-width: calc(100% - 10px);
 }
 
 .dark-mode {
@@ -36,6 +70,17 @@ h2:hover {
   color: red;
 }
 
+footer {
+  background-image: linear-gradient(180deg, #333, #5e5e5e);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 110%;
+  height: 100%;
+}
+
 .p-description {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2rem;
@@ -44,6 +89,29 @@ h2:hover {
 }
 .p-description:hover {
   color: red;
+}
+
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(119, 34, 34);
+  width: 33%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+  transition: all 0.3s;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
 
 .dark-button {
@@ -164,35 +232,59 @@ h2:hover {
 }
 
 .form-vertical {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   margin-bottom: 15px;
+  max-width: 75vw;
+  margin-top: 20px;
+  align-content: center;
+  border: rgba(204, 204, 204, 0) solid 2px;
+}
+.form-vertical:hover {
+  border: #ffffff solid 2px;
+  transition: border 0.3s;
 }
 .form-vertical label {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .form-vertical input,
-.form-vertical select,
-.form-vertical textarea {
-  width: 100%;
-  padding: 10px;
+.form-vertical select {
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
   margin-bottom: 15px;
+  min-width: 150px;
+  max-width: 100%;
 }
 .form-vertical input:focus,
-.form-vertical select:focus,
+.form-vertical select:focus {
+  outline: none;
+  border-color: #333;
+}
+.form-vertical textarea {
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  min-width: 150px;
+  max-width: 100%;
+}
 .form-vertical textarea:focus {
   outline: none;
   border-color: #333;
 }
-.form-vertical button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
+.form-vertical .submit-vertical {
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #ff0000;
   color: #fff;
   cursor: pointer;
+  margin-top: 10px;
 }
-.form-vertical button:hover {
+.form-vertical .submit-vertical:hover {
   background-color: #555;
 }
 
@@ -228,11 +320,63 @@ h2:hover {
 .dark-table {
   background-color: #333;
   color: #fff;
+  border: 1px solid #f2f2f2;
+}
+.dark-table td {
+  border: 1px solid #f2f2f2;
 }
 
 .light-table {
   background-color: #fff;
   color: #333;
+}
+.light-table td {
+  border: 1px solid #000000;
+}
+
+.table-striped th {
+  background-color: #ffffff;
+  color: #020202;
+}
+.table-striped tr:nth-child(1) {
+  background-color: #000000;
+  color: #ffffff;
+}
+.table-striped tr:nth-child(2) {
+  background-color: #ffffff;
+  color: #020202;
+}
+.table-striped tr:nth-child(3) {
+  background-color: #000000;
+  color: #ffffff;
+}
+.table-striped tr:nth-child(4) {
+  background-color: #ffffff;
+  color: #020202;
+}
+.table-striped tr:nth-child(5) {
+  background-color: #000000;
+  color: #ffffff;
+}
+.table-striped tr:nth-child(6) {
+  background-color: #ffffff;
+  color: #020202;
+}
+.table-striped tr:nth-child(7) {
+  background-color: #000000;
+  color: #ffffff;
+}
+.table-striped tr:nth-child(8) {
+  background-color: #ffffff;
+  color: #020202;
+}
+.table-striped tr:nth-child(9) {
+  background-color: #000000;
+  color: #ffffff;
+}
+.table-striped tr:nth-child(10) {
+  background-color: #ffffff;
+  color: #020202;
 }
 
 .img-icon {

@@ -11,7 +11,13 @@
     <h1>Redesing</h1>
     <p>CSS Framework based on SASS</p>
     <p>Version 1.0.0</p>
+    <p class="p-description"> By Alejandro Cabrera Carrasco</p>
+
+      This project is a simple CSS framework exercise created during a class to explore and practice fundamental web design techniques using SASS. It is a basic framework named "REDESIGN," focusing on styling forms, navigation bars, tables, buttons, and grids with predefined classes. The framework includes flexible and responsive layouts and showcases how to implement CSS properties effectively.
+      
+      The styles are straightforward and aimed at understanding concepts rather than achieving a production-level quality. This exercise is not intended to be a serious or professional project but rather a learning tool to demonstrate the application of CSS and SASS for real-world scenarios.</p>
     <br>
+    <h2>LOGO/IMAGES</h2>
     <img class= "img-xlarge" src="./media/logo.png" alt="Logo Framework" >
     <img class= "img-large" src="./media/logo.png" alt="Logo Framework" >
     <img class= "img-medium" src="./media/logo.png" alt="Logo Framework" >
@@ -27,10 +33,12 @@
       </p>
       <nav class="nav-horizontal">
         <ul>
-          <li><a href="#getting-started">Getting Started</a></li>
-          <li><a href="#grid-system">Graella</a></li>
-          <li><a href="#components">Components</a></li>
-          <li><a href="#customization">Personalització</a></li>
+          <li><a href="#redesing">Redesing</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#horizontal-forms">Horizontal Forms</a></li>
+          <li><a href="#vertical-forms">Vertical Forms</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
         </ul>
       </nav>
     </div>
@@ -46,6 +54,7 @@
     <button class="dark-button2">Dark Button</button>
     <button class="light-button2">Light Button</button>
   </div>
+  <br>
     <div class="div-form">
       <h2> HORIZONTAL FORMS</h2>
       <p class="p-description">
@@ -61,5 +70,116 @@
         <input class="sumbit-horizontal"type="submit" value="Submit">
       </form>
     </div>
+    <div class="div-form">
+      <h2> VERTICAL FORMS</h2>
+      <p class="p-description">
+        The .form-vertical class is designed to style vertical forms. It uses a block layout, allowing form elements to stack vertically. The form has padding and a transparent border that changes to white on hover with a smooth transition. Labels are placed above the form controls. Input, select, and textarea elements are styled with padding, borders, rounded corners, and responsive widths, changing border color on focus. The submit button, styled with the .submit-vertical class, has padding, rounded corners, a red background that darkens on hover, and a white text color.
+      </p>
+      <form class="form-vertical" action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="2" rows="2"></textarea>
+        <input class="submit-vertical" type="submit" value="Submit">
+      </form>
+    </div>
+    <br>
+    <div class="table">
+      <h2>TABLE STRIPPED / NORMAL </h2>
+      <p class="p-description">
+        The .dark-table class is designed to style tables with a dark theme. It provides a dark gray background with white text and borders. Table cells (td) have a light gray border.
+
+        The .light-table class is designed to style tables with a light theme. It provides a white background with dark gray text. Table cells (td) have a black border.
+        
+        The .table-striped class is designed to style tables with alternating row colors for better readability. The th elements (table headers) have a white background and black text. The tr elements (table rows) use a mixin called stripe-color to alternate the background and text colors. Even rows have a white background with black text, while odd rows have a black background with white text.      </p>
+      <table class="dark-table table-striped">
+
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table class="dark-table">
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="div-grid">
+    <h2>GRID RESPONSIVE</h2>
+    <p class="p-description">
+      The `.grid` class is designed to style grid items. It provides padding, centered text, bold font weight, and a specific text color. Each grid item occupies 33% of the container's width. The items have rounded corners, a box shadow for a subtle 3D effect, and a smooth transition for all properties. On hover, the grid items scale up slightly, creating a zoom-in effect with a smooth transition.
+    </p>
+    <div class="grid-responsive">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+      <div class="grid-item">10</div>
+    </div>
+    <br>
+
+    <div class="conclusion">
+      <h2>Conclusion</h2>
+      <p class="p-description">
+        This project demonstrates the effective use of SASS to create a basic, responsive, and versatile CSS framework. By focusing on essential components like navigation bars, buttons, forms, tables, and grids, it showcases how modern web design principles can be applied to build user-friendly and accessible interfaces. While the framework is intended as an educational exercise rather than a production-ready solution, it highlights the power of modular and reusable styling in web development. The result is a clean and organized approach to styling, suitable for exploring advanced concepts and honing design skills.
+     </p>
+    </div>
+
 </body>
+<footer>
+  <hr>
+  <p>© 2025 REDESIGN. All rights reserved.</p>
+  <a href="https://github.com/Alexasto12"><p>Designed by Alejandro Cabrera Carrasco</p></a>
+</footer>
 </html>
